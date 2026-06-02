@@ -1,0 +1,21 @@
+
+<div class="main-container">
+    <form #form1="ngForm" (ngSubmit)="OnSubmit(form1)">
+
+        <div class="form-group">
+            <label>
+            Name:
+            <input type="text" name="name" [(ngModel)]="name">
+        </label>
+        <br>
+        <label for="email">
+            Email:
+            <input type="email" id="email" name="email" [(ngModel)]="email">
+        </label>
+        <br>
+        
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
